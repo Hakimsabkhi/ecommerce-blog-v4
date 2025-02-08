@@ -58,7 +58,7 @@ const ProductList: React.FC<ProductListProps> = ({ products   }) => {
     <div>
     
     
-        <div className="grid group grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 max-md:gap-3 gap-8">
+        <div className="grid group grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-8">
           {currentProducts.map((item) => (
             <ProductCard key={item._id} item={item} />
           ))}
