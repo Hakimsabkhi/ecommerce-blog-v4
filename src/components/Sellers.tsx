@@ -30,7 +30,7 @@ const datatitleproduct=await gettitleproduct();
           </div>
 
           {/* Grid */}
-          <div className="gap-4 w-full grid grid-cols-5 max-xl:grid-cols-3 max-lg:grid-cols-3 max-md:grid-cols-2 mt-6">
+          <div className=" mx-auto gap-4 w-full grid grid-cols-5 max-xl:grid-cols-3 max-lg:grid-cols-3 max-md:grid-cols-2 mt-6">
             {bestsellers.map((item, index) => (
               <Link
                 className="cursor-pointer"

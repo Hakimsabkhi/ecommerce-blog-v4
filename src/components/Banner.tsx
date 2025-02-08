@@ -9,7 +9,7 @@ export default async function Banner() {
   const companyData = await getWebsiteinfoData();
 
   return (
-    <div className="relative">
+
       <Image
       className="h-[300px] max-md:h-[100px]"
       width={1900}
@@ -19,10 +19,10 @@ export default async function Banner() {
   src={companyData?.imageUrl || "/fallback-image.jpg"}
   placeholder="blur"
   blurDataURL={companyData?.imageUrl}
-  sizes="(max-width: 640px) 50vw, (max-width: 1200px) 50vw"
+  sizes="(max-width: 640px) 60vw, (max-width: 1200px) 50vw"
   priority
   quality={75}
 />
-    </div>
+
   );
 }

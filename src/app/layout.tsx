@@ -14,12 +14,12 @@ const poppins = Poppins({
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
   
   return (
-    <html lang="en" className={`${poppins.className} w-full h-full`}>
+    <html lang="en" className={`${poppins.className}`}>
       <head>
     <title>Your Page Title</title>
     
   </head>
-      <body className="w-full h-full">  
+      <body>  
             {children}
       </body>
     </html>

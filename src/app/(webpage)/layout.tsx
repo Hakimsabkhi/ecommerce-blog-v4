@@ -1,17 +1,19 @@
-
-import "@/app/globals.css";
+import React, { ReactNode } from "react";
 import Header from "@/components/menu/Header";
 import StoreProviders from "@/components/ProviderComp/StoreProvider";
+import Footer from "@/components/menu/Footer";
 
+interface SubLayoutProps {
+  children: ReactNode;
+}
 
-const SubLayout = ({ children }: { children: React.ReactNode }) => {
+const SubLayout = ({ children }: SubLayoutProps) => {
   return (
-    <div >
-      <StoreProviders>
-        <Header />
-        {children}
-      </StoreProviders>
-    </div>
+    <StoreProviders>
+      <Header />
+      {children}
+      <Footer />
+    </StoreProviders>
   );
 };
 

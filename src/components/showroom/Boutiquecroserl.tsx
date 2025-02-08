@@ -58,20 +58,20 @@ const BoutiqueCard: React.FC<BoutiqueCardProps> = ({
 
       {/* Info Section */}
       <div className="w-1/2 max-sm:w-full my-auto">
-        <div className=" flex flex-col gap-4 max-sm:items-center ">
+        <div className=" flex flex-col gap-2 max-sm:items-center ">
           <h2 className=" text-2xl font-bold uppercase">{boutique.nom}</h2>
-          <div className=" text-black flex  gap-2 flex-col max-sm:flex-row ">
+          <div className=" text-black flex  gap-2 flex-col ">
             <div className="flex  gap-2 items-center">
-              <span>
+      
                 <FaPhoneAlt size={20} />
-              </span>
+      
               <span className=" font-semibold ">:{boutique.phoneNumber}</span>
             </div>
 
             <div className="flex  gap-2 items-center">
-              <span className="inline-block text-black font-semibold">
+            
                 <FaMapMarkerAlt size={20} />
-              </span>
+        
               <span className="font-semibold">
                 {boutique.address} {boutique.city}
               </span>
@@ -185,7 +185,7 @@ const BoutiqueCarousel: React.FC<BoutiqueProps> = ({ boutiques }) => {
         <button
           onClick={prevSlide}
           className="absolute top-1/2 -left-1 transform -translate-y-1/2 p-1 z-10"
-          aria-label="Go to previous slide" // Adds an accessible name
+          aria-label="Go to previous slide"
         >
           <FaRegArrowAltCircleLeft size={50} />
         </button>
@@ -193,7 +193,7 @@ const BoutiqueCarousel: React.FC<BoutiqueProps> = ({ boutiques }) => {
         <button
           onClick={nextSlide}
           className="absolute top-1/2 -right-1 transform -translate-y-1/2 p-1 z-10"
-          aria-label="Go to next slide" // Adds an accessible name
+          aria-label="Go to next slide"
         >
           <FaRegArrowAltCircleRight size={50} />
         </button>

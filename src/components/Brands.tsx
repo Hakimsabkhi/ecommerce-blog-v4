@@ -30,10 +30,10 @@ const datatitlebarnd=await gettitlebrand();
   const titlebrand = JSON.parse(datatitlebarnd)
   // Helper function for the accordion card classes
   const getBrandCardClasses = () =>
-    "group/article relative w-full rounded-xl overflow-hidden md:group-hover:[&:not(:hover)]:w-[20%] md:group-focus-within:[&:not(:focus-within):not(:hover)]:w-[20%] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.15)] focus-within:ring focus-within:ring-indigo-300";
+    "group/article relative w-full max-md:h-[100px] rounded-xl overflow-hidden md:group-hover:[&:not(:hover)]:w-[20%] md:group-focus-within:[&:not(:focus-within):not(:hover)]:w-[20%] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.15)] focus-within:ring focus-within:ring-indigo-300";
 
   return (
-    <div className=" max-md:w-[95%] flex flex-col gap-10 max-md:gap-4 py-8">
+    <div className=" mx-auto max-md:w-[95%] flex flex-col gap-10 max-md:gap-4 py-8">
       {/* Page Header */}
       <div className="flex flex-col gap-2 max-md:gap-1 text-center w-full ">
         <h3 className="font-bold text-2xl text-HomePageTitles">
@@ -45,7 +45,7 @@ const datatitlebarnd=await gettitlebrand();
       </div>
 
       {/* Accordion-like Brand Cards */}
-      <div className="group w-[80%] flex max-md:flex-col justify-center gap-2 h-[500px] mx-auto">
+      <div className="group w-[80%] flex max-md:flex-col justify-center gap-2 h-[500px] max-md:h-fit mx-auto">
         {brands.map((brand) => (
           <div key={brand._id} className={getBrandCardClasses()}>
             {/* Background Image */}
