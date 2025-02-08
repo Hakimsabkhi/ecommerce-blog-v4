@@ -11,9 +11,9 @@ export default async function Banner() {
   return (
 
       <Image
-      className="h-[300px] max-md:h-[100px]"
-      width={1900}
-      height={300}
+      className="h-[200px] max-md:h-[100px]"
+      width={1920}
+      height={200}
   style={{ objectFit: "cover" }}
   alt="banner"
   src={companyData?.imageUrl || "/fallback-image.jpg"}

@@ -12,14 +12,14 @@ interface ChairsbannerProps {
 const Chairsbanner: React.FC<ChairsbannerProps> = ({ category }) => {
   return (
     <div className="relative">
-      <div className="max-2xl:pl-40 max-sm:pl-2 text-xl md:text-4xl lg:text-7xl  text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/4 absolute font-bold">
+      <div className=" h-full w-[20%] bg-black bg-opacity-60 flex justify-center items-center max-2xl:pl-40 max-sm:pl-2 text-xl md:text-4xl lg:text-7xl  text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/4 absolute font-bold">
         {category?.name}
       </div>
       <Image
         src={category?.bannerUrl || "default"}
-        className="h-[300px] max-md:h-[100px]"
-        width={1900}
-        height={300}
+        className="h-[200px] max-md:h-[100px]"
+        width={1920}
+        height={200}
         style={{ objectFit: "cover" }}
         alt="banner"
         placeholder="blur"
