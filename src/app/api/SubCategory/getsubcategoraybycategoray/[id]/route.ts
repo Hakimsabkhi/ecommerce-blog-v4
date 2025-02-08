@@ -23,10 +23,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
   
       // Connect to the database
       await connectToDatabase();
-  
-      // Get user information from token
       
-  
+
       // Fetch subcategories for the specified category ID
       const subcategory = await Subcategory.find({ category: id,vadmin:'approve'}).exec();
   

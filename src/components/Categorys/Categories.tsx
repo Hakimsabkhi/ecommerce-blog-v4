@@ -16,7 +16,7 @@ export default async function Categories() {
       {categories.length > 0 && (
         <div>
           <div className="flex-col flex gap-2 items-center w-full max-lg:text-center mb-6">
-            <h3 className="font-bold text-4xl text-HomePageTitles">
+            <h3 className="font-bold text-2xl text-HomePageTitles">
               {titlecatgoray.title}
             </h3>
             <p className="text-base text-[#525566]">{titlecatgoray.subtitle}</p>

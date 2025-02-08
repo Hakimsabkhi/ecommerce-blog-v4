@@ -58,7 +58,7 @@ const Collection: React.FC = async () => {
     <div className="desktop max-lg:w-[95%] flex flex-col justify-center items-center gap-10 py-8">
       {filteredProductsCount > 0 && (
         <div className="col-span-full flex flex-col items-center gap-2">
-          <h2 className="font-bold text-HomePageTitles text-4xl">
+          <h2 className="font-bold text-HomePageTitles text-2xl">
           {titleproduct?.pctitle}
           </h2>
           <p className="text-base text-[#525566]">

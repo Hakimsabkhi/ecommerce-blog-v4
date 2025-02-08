@@ -21,7 +21,7 @@ const datatitleproduct=await gettitleproduct();
         <div>
           {/* Title + Subtitle */}
           <div className="flex-col flex gap-2 items-center w-full max-lg:text-center">
-            <h3 className="font-bold text-4xl text-HomePageTitles">
+            <h3 className="font-bold text-2xl text-HomePageTitles">
             {titleproduct?.wbtitle}
             </h3>
             <p className="text-base text-[#525566]">

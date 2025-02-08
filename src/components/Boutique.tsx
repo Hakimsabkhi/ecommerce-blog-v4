@@ -15,7 +15,7 @@ const Boutiquehomepage = async () => {
     <div className=" w-[95%] mx-auto py-8">
        {boutiques  && (
         <div className="flex w-full flex-col gap-2 items-center">
-          <h3 className="font-bold text-4xl text-HomePageTitles">
+          <h3 className="font-bold text-2xl text-HomePageTitles">
           Nos Boutiques
           </h3>
         </div>

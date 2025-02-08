@@ -55,7 +55,7 @@ const Furniture = async () => {
     <div className="desktop max-lg:w-[95%] flex flex-col justify-center items-center gap-10 py-8">
       {filteredProductsCount > 0 && (
         <div className="flex w-full flex-col gap-2 items-center">
-          <h3 className="font-bold text-4xl text-HomePageTitles">
+          <h3 className="font-bold text-2xl text-HomePageTitles">
           {titleproduct?.cptitle}
           </h3>
           <p className="text-base text-[#525566]">
