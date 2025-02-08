@@ -1,6 +1,4 @@
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/lib/authOptions"; // Ensure the path is correct
-import SessionProviderWrapper from "@/components/ProviderComp/SessionProviderWrapper";
+
 import { Poppins } from "next/font/google";
 import "@/app/globals.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,7 +13,6 @@ const poppins = Poppins({
 });
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
-  const session = await getServerSession(authOptions);
   
   return (
     <html lang="en" className={`${poppins.className} w-full h-full`}>
@@ -23,10 +20,8 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
     <title>Your Page Title</title>
     
   </head>
-      <body className="w-full h-full">
-        <SessionProviderWrapper session={session}>    
+      <body className="w-full h-full">  
             {children}
-        </SessionProviderWrapper>
       </body>
     </html>
   );

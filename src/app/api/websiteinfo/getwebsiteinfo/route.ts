@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server';
 import connectToDatabase from '@/lib/db';
 import Websiteinfo from '@/models/Websiteinfo';
 
-export const dynamic = 'force-dynamic';
-
 export async function GET() {
   try {
     // Ensure the database connection is established

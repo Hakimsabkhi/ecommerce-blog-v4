@@ -14,7 +14,6 @@ async function getAllBrands() {
   await connectToDatabase();
   
   const brands = await Brand.find({})
-    .populate("user", "_id username")
     .lean();
 
   return brands.map((brand) => ({

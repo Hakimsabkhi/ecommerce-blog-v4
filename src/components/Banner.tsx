@@ -3,23 +3,22 @@ import React from "react";
 import Image from "next/image";
 import { getWebsiteinfoData } from "@/lib/StaticDataHomePage";
 
-export const revalidate =1000;
+export const revalidate = 60;
 
 export default async function Banner() {
   const companyData = await getWebsiteinfoData();
 
   return (
-    <div className="relative md:h-[600px] shadow-lg">
+    <div className="relative w-auto h-[300px] max-md:h-[100px]">
       <Image
-        className="w-full md:h-full"
         fill
         style={{ objectFit: "cover" }}
         alt="banner"
-        src={companyData?.imageUrl || "/fallback.jpg"}
-        sizes="(max-width: 900px) 400px, 900px"
-        loading="eager"
-        decoding="async"
-        priority // Preload the image
+        src={companyData?.imageUrl || "/fallback-image.jpg"}
+        placeholder="blur"
+        blurDataURL={companyData?.imageUrl}
+        sizes="(max-width: 640px) 10vw, (max-width: 1200px) 10vw (max-width: 1920px) 100vw"
+        quality={75}
       />
     </div>
   );

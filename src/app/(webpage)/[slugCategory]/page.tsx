@@ -2,7 +2,7 @@ import React from 'react';
 import Products from '@/components/Products';
 import Chairsbanner from '@/components/Chairsbanner';
 import { notFound } from 'next/navigation';
-import { searchcategory } from '@/lib/StaticCategoryProduct';
+import { searchcategory } from '@/lib/StaticCatgoryproduct';
 
 
 

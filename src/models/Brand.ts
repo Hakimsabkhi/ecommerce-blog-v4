@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Model, Types } from "mongoose";
-import { IUser } from "./User"; // Assuming IUser is defined in the User model
+import { IUser } from "./User";
 
 // Define the IBrand interface
 export interface IBrand extends Document {
@@ -8,7 +8,7 @@ export interface IBrand extends Document {
   place: string;
   logoUrl?: string;
   imageUrl?: string;
-  user: IUser | mongoose.Types.ObjectId; // Relates to the IUser model
+  user: IUser | mongoose.Types.ObjectId;
   createdAt?: Date;
   updatedAt?: Date;
 }

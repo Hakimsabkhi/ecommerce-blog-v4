@@ -4,7 +4,7 @@ import FirstBlock from "@/components/Products/SingleProduct/FirstBlock";
 import SecondBlock from "@/components/Products/SingleProduct/SecondBlock";
 import ForthBlock from "@/components/Products/SingleProduct/ForthBlock";
 import FifthBlock from "@/components/Products/SingleProduct/FifthBlock";
-import { getproductbycatgory, getProductById } from "@/lib/StaticCategoryProduct";
+import { getproductbycatgory, getProductById } from "@/lib/StaticCatgoryproduct";
 
 
 
