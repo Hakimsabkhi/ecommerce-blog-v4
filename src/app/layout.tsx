@@ -1,7 +1,6 @@
 
 import { Poppins } from "next/font/google";
 import "@/app/globals.css";
-import "react-toastify/dist/ReactToastify.css";
 
 
 // Load the Google font

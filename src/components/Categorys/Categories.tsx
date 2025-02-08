@@ -45,16 +45,16 @@ export default async function Categories() {
                     {category.numberproduct}
                   </p>
 
-                  <Image  
-                  className="rounded-full w-full"  
+                  <Image
+                    className="rounded-full w-full"
                     src={category.imageUrl!}
                     alt={category.name}
                     width={100}
                     height={100}
                     placeholder="blur"
                     blurDataURL={category.imageUrl!}
-                  sizes="(max-width: 640px) 15vw, (max-width: 1200px) 15vw"
-                    style={{  objectFit: "cover" }}          
+                    sizes="(max-width: 640px) 15vw, (max-width: 1200px) 15vw"
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
               </Link>

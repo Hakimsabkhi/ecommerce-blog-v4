@@ -9,17 +9,20 @@ export default async function Banner() {
   const companyData = await getWebsiteinfoData();
 
   return (
-    <div className="relative w-auto h-[300px] max-md:h-[100px]">
+    <div className="relative">
       <Image
-        fill
-        style={{ objectFit: "cover" }}
-        alt="banner"
-        src={companyData?.imageUrl || "/fallback-image.jpg"}
-        placeholder="blur"
-        blurDataURL={companyData?.imageUrl}
-        sizes="(max-width: 640px) 10vw, (max-width: 1200px) 10vw (max-width: 1920px) 100vw"
-        quality={75}
-      />
+      className="h-[300px] max-md:h-[100px]"
+      width={1900}
+      height={300}
+  style={{ objectFit: "cover" }}
+  alt="banner"
+  src={companyData?.imageUrl || "/fallback-image.jpg"}
+  placeholder="blur"
+  blurDataURL={companyData?.imageUrl}
+  sizes="(max-width: 640px) 50vw, (max-width: 1200px) 50vw"
+  priority
+  quality={75}
+/>
     </div>
   );
 }
