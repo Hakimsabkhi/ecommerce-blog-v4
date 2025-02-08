@@ -28,7 +28,7 @@ const Chairsbanner: React.FC <ChairsbannerProps>= ({ category }) => {
         </Link>
         <div className='w-full h-full flex items-center justify-center'>        
               <Image
-              className='object-cover w-full h-[400px]'
+              className='object-cover w-full h-[300px] max-md:h-[100px]'
               src={category?.bannerUrl || 'default'}
               alt='category logo'
               height={400}
