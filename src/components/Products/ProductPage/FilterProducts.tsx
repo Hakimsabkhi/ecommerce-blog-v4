@@ -76,11 +76,11 @@ const FilterProducts: React.FC<FilterProductsProps> = ({
 }) => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   return (
-    <div className="lg:w-full bg-slate-200 rounded-md max-md:h-10 max-md:flex justify-end">
+    <div className="xl:w-full rounded-md">
       {/* Filtre Button for md and below */}
-      <div className="md:hidden w-24">
+      <div className="xl:hidden w-24 bg-slate-200 rounded-md">
         <button
-          className="flex items-center  gap-2 px-4 py-2  rounded-md lg:shadow-md"
+          className="flex items-center  gap-2 px-4 py-2  rounded-md "
           onClick={() => setIsFilterOpen(true)}
         >
           <FaFilter />
@@ -90,13 +90,14 @@ const FilterProducts: React.FC<FilterProductsProps> = ({
 
       {/* Filter Panel (Always visible on lg, modal for md and below) */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center md:relative md:bg-transparent md:block md:z-auto ${
-          isFilterOpen ? "block" : "hidden md:block"
+        className={`fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center xl:relative xl:bg-transparent xl:block xl:z-auto ${
+          isFilterOpen ? "block" : "hidden xl:block"
         }`}
       >
-        <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 max-w-md md:max-w-full md:w-full md:shadow-none md:bg-transparent">
+        <div className="bg-white p-6 xl:p-1 rounded-lg shadow-lg w-11/12 max-w-md xl:max-w-full xl:w-full xl:shadow-none xl:bg-transparent">
           {/* Close Button for md and below */}
-          <div className="flex justify-between items-center md:hidden">
+          <div className="flex justify-between items-center xl:hidden">
+            <h2></h2>
             <h2 className="text-lg font-bold">Filtres</h2>
             <button className=" text-xl font-bold" onClick={() => setIsFilterOpen(false)}>
               X
@@ -219,7 +220,7 @@ const FilterProducts: React.FC<FilterProductsProps> = ({
           </div>
 
           {/* Apply Filters Button (md and below) */}
-          <div className="flex justify-end md:hidden">
+          <div className="flex justify-end xl:hidden">
             <button
               className="px-4 py-2 bg-blue-600 text-white font-bold rounded-md shadow-md"
               onClick={() => setIsFilterOpen(false)}

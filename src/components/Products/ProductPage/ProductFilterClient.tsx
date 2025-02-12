@@ -121,12 +121,12 @@ const ProductFilterClient: React.FC<ProductFilterClientProps> = ({
 
   return (
     <div>
-      <div className="desktop max-2xl:w-[95%] ">
+      <div className="desktop max-2xl:w-[95%]">
         <OrderPrice setSortOrder={setSortOrder} sortOrder={sortOrder} />
       </div>
       <div className=" desktop max-2xl:w-[95%] gap-8 max-md:items-center xl:flex xl:flex-cols-2">
         {/* Filters */}
-        <div className="xl:w-1/6 md:mx-auto md:border-2 md:p-2 h-fit rounded-lg lg:shadow-md mb-8 max-md:flex max-md:justify-end">
+        <div className="xl:w-1/6 xl:mx-auto xl:border-2 xl:p-2 h-fit rounded-lg xl:shadow-md mb-8 max-xl:flex max-xl:justify-end">
           <FilterProducts
             selectedBrand={selectedBrand}
             setSelectedBrand={setSelectedBrand}
